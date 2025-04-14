@@ -48,8 +48,10 @@ class View(ft.UserControl):
         self.btn_calcola_sequenza = ft.ElevatedButton(text="Calcola sequenza",
                                              tooltip="Calcola la sequenza ottimale per le analisi",
                                              on_click=self._controller.handle_sequenza)
+
         row1 = ft.Row([self.dd_mese, self.btn_umidita, self.btn_calcola_sequenza],
                       alignment=ft.MainAxisAlignment.CENTER)
+
         self._page.controls.append(row1)
 
         # List View where the reply is printed
